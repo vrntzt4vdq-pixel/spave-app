@@ -21,4 +21,4 @@ Spave is a responsive fintech web app that helps users track spending, manage bu
 3. Track your balance and savings
 
 ## Author
-Frontend Developer – [Your Name]
+Frontend Developer – [Jesam Ekambe]
