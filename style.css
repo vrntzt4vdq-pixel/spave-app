@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+/* ONBOARDING */
+#onboarding {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.screen {
+    display: none;
+    text-align: center;
+}
+
+.screen.active {
+    display: block;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* APP */
+#app {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #020617;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.balance-card {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    flex: 1;
+    background: #22c55e;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.add-btn {
+    width: 100%;
+    background: #3b82f6;
+    color: white;
+}
+
+li {
+    background: #334155;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:600px) {
+    .actions {
+        flex-direction: column;
+    }
+}

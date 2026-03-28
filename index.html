@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spave</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ONBOARDING -->
+<div id="onboarding">
+  <div class="screen active">
+    <h1>SPAVE</h1>
+    <p>Your financial co-pilot</p>
+    <button onclick="next()">Next</button>
+  </div>
+
+  <div class="screen">
+    <h2>Track Spending</h2>
+    <p>Know where your money goes</p>
+    <button onclick="next()">Next</button>
+  </div>
+
+  <div class="screen">
+    <h2>Save Smartly</h2>
+    <p>Automatically save 7.5%</p>
+    <button onclick="next()">Next</button>
+  </div>
+
+  <div class="screen">
+    <h2>Get Started</h2>
+    <button onclick="startApp()">Enter App</button>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-box">
+      <img src="logo.png" class="logo">
+      <h2>Spave</h2>
+    </div>
+    <div>🔔</div>
+  </div>
+
+  <div class="container">
+
+    <div class="card balance-card">
+      <p>Account Balance</p>
+      <h1 id="balance">₦0</h1>
+    </div>
+
+    <div class="card">
+      <p>Safe to Spend</p>
+      <h2 id="safe">₦0</h2>
+    </div>
+
+    <div class="card">
+      <p>Savings</p>
+      <h2 id="savings">₦0</h2>
+    </div>
+
+    <div class="actions">
+      <button>💸 Send</button>
+      <button>➕ Add</button>
+      <button>💰 Save</button>
+    </div>
+
+    <div class="card">
+      <h3>Add Transaction</h3>
+      <input id="desc" placeholder="Description">
+      <input id="amt" type="number" placeholder="Amount">
+      <button class="add-btn" onclick="addTransaction()">Add</button>
+    </div>
+
+    <div class="card">
+      <h3>Transactions</h3>
+      <ul id="list"></ul>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
